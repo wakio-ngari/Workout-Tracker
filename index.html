@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Workout Tracker</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Workout Tracker</h1>
+  
+  <!-- Filter Section -->
+  <section id="filter">
+     <label for="workout-type">Workout Type:</label>
+     <select id="workout-type">
+        <option value="">All</option>
+        <option value="muscle Training">muscles</option>
+        <option value="Abs Training">Abs </option>
+        <option value="leg day">leg day</option>
+        <option value="glutes training">glutes</option>
+        <option value="other">others</option>
+   </select>
+    <button id="reset-filters">Reset </button>
+  </section>
+  
+  <!-- Add Workout Form -->
+  <section id="add-workout">
+    <h2>Add Workout</h2>
+    <form id="workout-form">
+      <label for="workout-name">Workout Name</label>
+      <input type="text" id="workout-name" required>
+      <label for="workout-duration">Duration (minutes)</label>
+      <input type="number" id="workout-duration" required>
+
+      <label for="workout-difficulty">Difficulty</label>
+      <select id="workout-difficulty">
+        <option value="Easy">Easy</option>
+        <option value="Medium">Medium</option>
+        <option value="Hard">Hard</option>
+      </select>
+      
+            
+      <label for="date">Date</label>
+      <input type="date" id="date" required>
+      
+      <button type="submit">Add Workout</button>
+    </form>
+  </section>
+
+<!--Workout List-->
+  <section id="workout-list">
+    <h2>My Workouts</h2>
+    <div id="workout-list-container">
+    <ul id="workouts"></ul>
+</div>
+
+</section>
+
+  <script src="index.js"></script>
+</body>
+</html>
+

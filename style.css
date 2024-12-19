@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;/*removes padding and margin to allow control over spacing*/
+    padding: 0;
+    background-image: url('girl-5610613_1280.jpg'); /* Ensure the path is correct */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 100vh;
+    
+}
+
+/* Reduce space around the filter section */
+#filter {
+    margin: 10px auto; /* Reduced the margin to make it more compact */
+    padding: 10px; /* Reduced the padding */
+    background: pink; /* Optional: add a transparent background */
+    border-radius: 10px; /* Slightly rounded corners */
+    display: inline-block; /* Make it take only the necessary width */
+}
+
+/* Reduce the space around the Workout Type label and select */
+#filter label, #filter select {
+    margin: 5px 0; /* Reduced margin */
+    padding: 5px; /* Reduced padding */
+}
+
+
+/* Main heading */
+h1 {
+    font-size: 2.5rem;
+    color: purple;
+    margin-top: 0;
+    padding: 20px 0;/*to create space above and below text*/
+}
+
+/* Flex container for the two sections */
+main {
+    display: flex; /* Ensures the #add-workout and #workout-list sections are displayed side-by-side.*/
+    justify-content: space-between; /* Add space between sections */
+    align-items: flex-start; /* Align items at the top */
+    width: 80%; /* Limit the container's width */
+    margin: 20px auto; /* Center the main container */
+    gap: 20px; /* Add spacing between sections */
+}
+
+/* Add Workout Section */
+#add-workout {
+    flex: 1; /* Allow the section to take available space */
+    max-width: 45%; /* Prevent the section from growing too wide */
+    text-align: left; /* Align text to the left */
+    margin-top:20px;
+}
+
+/* Workout List Section */
+#workout-list {
+    flex: 1; /* Allow the section to take available space */
+    max-width: 45%; /* Prevent the section from growing too wide */
+    margin-left: auto; /* Push this section to the far right */
+    text-align: center; 
+    margin-top: -400px;/* Align text to the left */
+}
+
+/* General section styling */
+section {
+    background:purple; /* White background with slight transparency */
+    padding: 20px;
+    border-radius: 50px;/*for smooth appearnce*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+}
+
+/* Form styling */
+form {
+    background:pink;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(128, 0, 128, 0.5);
+}
+
+form input, form select, form button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: white;
+}
+
+form button {
+    background-color: #5c67f2;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #4348b4;
+}
+
+/* Workout list container */
+#workout-list-container {
+    margin-top: 10px;
+    padding: 5px; /* Reduced padding */
+    max-height: 400px; /* Optional: set a max height for the list container */
+    overflow-y: auto; /* Allows scrolling if the list exceeds the max height */
+}
+
+/* Workout list items */
+#workout-list div {
+    background:pink;
+    margin-bottom: 8px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+}
+
+#workout-list button {
+    background: #5c67f2;
+    color:lightpink;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+   
+}
+
+#workout-list button:hover {
+    background: #4348b4;
+}
+
+/* Subheadings */
+h2 {
+    color:black;
+}
+/* Label styling */
+label {
+    font-style: italic;
+    font-weight: bold;
+    font-size:medium;
+}
+#reset-filters {
+    background-color: #f44;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  #reset-filters:hover {
+    background-color: #d33;
+  }
+
