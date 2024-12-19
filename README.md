@@ -1,5 +1,6 @@
 # WORKOUTS  TRACKER 
 ## About the App
+Here is the live link"https://wakio-ngari.github.io/Workout-Tracker/"
 The Workout Tracker is a web application  that is designed to help users log, filter, and manage their workout routines. It provides a simple interface for users to add custom workouts and browse exercises fetched from an external API(wger api). This app is ideal for fitness enthusiasts looking to organize their training schedules and track progress of their workouts .
 
 ## Technologies Used.
